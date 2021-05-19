@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Barbershop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="banner">
+	
+		<img src="img/logo.png" alt="logo" class="logo">
+		<div class="banner-text">
+			<h1>Hair Studio</h1>
+			<p>Style your hair is style your life</p>
+			<div class="banner-btn">
+				<a href="#"><span></span>Find out</a>
+				<a href="#"><span></span>Read more</a>
+			</div>
+		</div>
+
+	</section>	
+<div id="sideNav">
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Testimonials</a></li>
+			<li><a href="#">Meet us</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="img/menu.png" alt="menu" id="menu">
+</div>
+
+<script>
+	var menuBtn = document.getElementyId("menuBtn")
+	var sideNav = document.getElementyId("sideNav")
+	var menu = document.getElementyId("menu")
+
+	menuBtn.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+		}
+		else{
+			sideNav.style.right = "=-250px";
+		}
+	}
+</script>
+</body>
+</html>
